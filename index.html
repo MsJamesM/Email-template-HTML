@@ -17,8 +17,10 @@
         margin: 0;
         padding: 0;
         font-family: "Figtree", Helvetica, Sans-serif;
-        font-size: 18px;
+        font-weight: 300;
         line-height: 1.5;
+        font-size: 18px;
+        letter-spacing: 0.2px;
       }
       .container {
         max-width: 40%;
@@ -36,15 +38,20 @@
       }
       .header {
         background-color: transparent;
-        color: #dadada;
+        color: #d6d5d5;
+      }
+      h1 {
+        font-size: 44px;
+        font-weight: 450;
       }
       button {
         display: inline-block;
         margin: 1%;
+        margin-bottom: 3%;
         padding: 24px;
         background-color: transparent;
-        border: solid #dadada 4px;
-        color: #dadada;
+        border: solid #d6d5d5 4px;
+        color: #d6d5d5;
         text-align: center;
         text-transform: uppercase;
         font-size: 16px;
@@ -63,9 +70,22 @@
       section {
         margin-bottom: 3%;
         padding: 2%;
-        background-color: #474747;
+        background-color: #242021ff;
         color: #fff;
         text-align: left;
+      }
+      #services-section {
+        display: flex;
+        background-color: orange;
+        padding: 0px;
+        margin: 0px;
+      }
+      #services-section-image {
+        align-items: left;
+      }
+      #services-section-text {
+        align-items: right;
+        padding-left: 2%;
       }
       table {
         width: 100%;
@@ -81,7 +101,7 @@
       }
       .footer {
         padding: 1%;
-        background-color: #474747;
+        background-color: transparent;
         color: #fff;
       }
     </style>
@@ -94,43 +114,53 @@
         style="max-width: 50%; height: auto; margin-top: 35%"
       />
       <div class="header">
-        <h1>Building a more prosperous and resilient world for all</h1>
+        <h1>
+          Building a more prosperous and resilient world
+          <span style="color: #fff">for all</span>
+        </h1>
       </div>
-      <button>Press me</button>
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          ultricies libero. Vivamus tincidunt pharetra nisi, nec lobortis risus
-          rhoncus quis. Nulla nec ligula eros.
+      <section id="services-section">
+        <img
+          id="services-section-image"
+          src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
+          style="max-width: 50%; height: auto; float: left"
+        />
+        <p id="services-section-text">
+          At the heart of ICF are leaders who truly care about the work we
+          do—and the people making it happen. Many started their careers at ICF
+          and as their professional paths have grown, so has their commitment to
+          our culture, strategy, and teams.
         </p>
       </section>
-      <section>
-        <table>
-          <tr>
-            <th>Row header</th>
-            <th>Row header</th>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-          <tr>
-            <td>Cell</td>
-            <td>Cell</td>
-          </tr>
-        </table>
-      </section>
-      <section>
+      <section style="text-align: center; background-color: transparent">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
-          ultricies libero. Vivamus tincidunt pharetra nisi, nec lobortis risus
-          rhoncus quis. Nulla nec ligula eros.
+          <img
+            src="https://www.icf.com/-/media/images/icf/logos/awards/new/forbes-best-management-consulting-firms_black-and-white-award-badge-site-test-1-01.svg?rev=9efbfb1324cb49258e075d3854923b7d&la=en&hash=CDCC23985D9901E9BB16570B999571DB"
+            style="max-width: 30%; height: auto"
+          />
+          <img
+            src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/forbes-best-diversity-badge_black-400px-01.svg?rev=b2459617f6414ee2871184b9beaff65c&la=en&hash=CF0240242FE0E6FF2B3266C6C8182721"
+            style="
+              max-width: 30%;
+              height: auto;
+              padding-left: 3%;
+              padding-right: 3%;
+            "
+          />
+          <img
+            src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/thebestemployersforwomen_2023_square_bw-400px.svg?rev=3cc5a2a439654db78e80d4e0ba0366d3&la=en&hash=DE8C46CADAD41A660B2E42A05030CCF9"
+            style="max-width: 30%; height: auto"
+          />
         </p>
       </section>
+      <section style="text-align: center">
+        <p style="font-weight: 500; font-size: 20px">
+          “ICF has made it possible for my company, a service-disabled,
+          veteran-owned business to grow year-over-year and expand into multiple
+          states.” — KC Sanchez, President, Vets Corp Energy Solutions
+        </p>
+      </section>
+      <button>Press me</button> <button>Or me</button>
       <div class="footer">
         <p>&copy; 2024 Business. All rights reserved.</p>
       </div>
