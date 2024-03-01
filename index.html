@@ -4,39 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Email Template</title>
     <style>
       body,
       html {
         margin: 0;
         padding: 0;
-        font-family: Sans-serif;
+        font-family: "Figtree", Helvetica, Sans-serif;
+        font-size: 18px;
         line-height: 1.5;
       }
       .container {
         max-width: 40%;
         margin: auto;
         padding: 2%;
-        background-color: #ececec;
+        background-image: url("https://images.unsplash.com/photo-1519424032898-dde33a58fe04?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-color: #000;
+        text-align: center;
       }
-      .logo-container {
-        display: inline-block;
-        transform: translate(60%, 0%);
+      #placeholder-logo {
+        z-index: 2;
+        text-align: center;
       }
       .header {
-        text-align: center;
         background-color: transparent;
-        color: #474747;
-      }
-      h2 {
-        text-align: center;
-        color: #474747;
+        color: #dadada;
       }
       section {
         margin-bottom: 3%;
         padding: 2%;
         background-color: #474747;
         color: #fff;
+        text-align: left;
       }
       table {
         width: 100%;
@@ -52,7 +59,6 @@
       }
       .footer {
         padding: 1%;
-        text-align: center;
         background-color: #474747;
         color: #fff;
       }
@@ -60,17 +66,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="logo-container">
-        <img
-          src="https://projectheena.com/uploads/ngo/38166435116719/profileImage/images/prsindia.png"
-          id="placeholder-logo"
-          style="max-width: 70%; height: auto"
-        />
-      </div>
+      <img
+        src="https://s3.amazonaws.com/crm.consulting/logos/icf.png"
+        id="placeholder-logo"
+        style="max-width: 50%; height: auto; margin-top: 35%"
+      />
       <div class="header">
-        <h1>Insert Business Name</h1>
+        <h1>Building a more prosperous and resilient world for all</h1>
       </div>
-      <h2>Insert Welcoming H2 Text</h2>
 
       <section>
         <p>
