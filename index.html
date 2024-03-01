@@ -38,6 +38,28 @@
         background-color: transparent;
         color: #dadada;
       }
+      button {
+        display: inline-block;
+        margin: 1%;
+        padding: 24px;
+        background-color: transparent;
+        border: solid #dadada 4px;
+        color: #dadada;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "Figtree";
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+
+      button:hover {
+        transform: translateY(-7px);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
       section {
         margin-bottom: 3%;
         padding: 2%;
@@ -74,7 +96,7 @@
       <div class="header">
         <h1>Building a more prosperous and resilient world for all</h1>
       </div>
-
+      <button>Press me</button>
       <section>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
