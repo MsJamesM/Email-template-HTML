@@ -42,7 +42,7 @@
       }
       h1 {
         font-size: 44px;
-        font-weight: 450;
+        font-weight: 400;
       }
       button {
         display: inline-block;
@@ -62,44 +62,99 @@
       button:hover {
         transform: translateY(-7px);
       }
-
       button:active {
         transform: translateY(0);
       }
       section {
+        display: flex;
+        align-items: center;
+        text-align: left;
         margin-bottom: 3%;
         padding: 2%;
         background-color: #242021ff;
         color: #fff;
-        text-align: left;
-      }
-      #services-section {
-        display: flex;
-        align-items: center;
-        background-color: orange;
-        padding: 0;
-        margin: 20px 0;
         transition: transform 0.2s ease;
       }
-
-      #services-section:hover {
+      section:hover {
         transform: translateY(-7px);
       }
-
-      #services-section-link {
-        display: flex;
-        align-items: center;
-        color: #fff;
-        text-decoration: none;
+      section:hover svg {
+        transform: translateX(8px);
+      }
+      table-section:hover {
+        padding: 2%;
+      }
+      section svg {
+        transition: transform 0.3s ease;
       }
       svg {
         fill: #fff;
-      }
-      #services-section svg {
         transition: transform 0.3s ease;
       }
-      #services-section:hover svg {
-        transform: translateX(8px);
+      #about-section {
+        background-color: #a5b5b2ff;
+        padding: 0;
+        margin: 20px 0;
+      }
+      #about-section-link,
+      #values-section-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      #values-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        background-color: #607339;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        color: #fff;
+      }
+      th,
+      td {
+        padding: 1%;
+        text-align: left;
+        background-color: transparent;
+      }
+      td:hover {
+        text-decoration: underline;
+      }
+      #stats-table-container:hover {
+        transform: none;
+      }
+      .special-table-headers {
+        font-size: 50px;
+        font-weight: 300;
+        transition: transform 0.3s ease;
+        text-align: center;
+        padding: 0%;
+      }
+      .special-table-headers:hover {
+        transform: scale(1.1);
+      }
+      .special-table-cells {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .special-table-cells:hover {
+        text-decoration: none;
+      }
+      #awards-images {
+        transform: none;
+      }
+      .awards-hover-scale {
+        transition: transform 0.2s ease;
+      }
+      .awards-hover-scale:hover {
+        transform: scale(1.1);
       }
       .footer {
         padding: 1%;
@@ -111,9 +166,9 @@
   <body>
     <div class="container">
       <img
-        src="https://s3.amazonaws.com/crm.consulting/logos/icf.png"
+        src="https://i.imgur.com/Zglqr0y.png"
         id="placeholder-logo"
-        style="max-width: 50%; height: auto; margin-top: 35%"
+        style="max-width: 40%; height: auto; margin-top: 40%"
       />
       <div class="header">
         <h1>
@@ -121,18 +176,25 @@
           <span style="color: #fff">for all</span>
         </h1>
       </div>
-      <section id="services-section">
-        <a id="services-section-link" href="icf.com">
+      <section id="about-section">
+        <a id="about-section-link" href="icf.com">
           <img
-            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
+            src="https://i.imgur.com/THYaJhG.png"
             style="max-width: 50%; height: auto"
           />
-          <p style="padding-left: 2%">
-            At the heart of ICF are leaders who truly care about the work we
-            do—and the people making it happen. Many started their careers at
-            ICF and as their professional paths have grown, so has their
-            commitment to our culture, strategy, and teams.<br />
-            <span style="font-weight: bold">Explore</span>
+          <p style="padding-left: 5%; padding-right: 5%">
+            ICF is a global advisory and technology services provider, combining
+            unmatched expertise with cutting-edge technology to help clients
+            solve their most complex challenges, navigate change, and shape the
+            future.<br />
+            <span
+              style="
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+              "
+              >Learn more</span
+            >
             <svg width="16px" height="16px" style="vertical-align: middle">
               <polygon
                 points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
@@ -141,27 +203,147 @@
           </p>
         </a>
       </section>
-      <section style="text-align: center; background-color: transparent">
-        <p>
-          <img
-            src="https://www.icf.com/-/media/images/icf/logos/awards/new/forbes-best-management-consulting-firms_black-and-white-award-badge-site-test-1-01.svg?rev=9efbfb1324cb49258e075d3854923b7d&la=en&hash=CDCC23985D9901E9BB16570B999571DB"
-            style="max-width: 30%; height: auto"
-          />
-          <img
-            src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/forbes-best-diversity-badge_black-400px-01.svg?rev=b2459617f6414ee2871184b9beaff65c&la=en&hash=CF0240242FE0E6FF2B3266C6C8182721"
-            style="
-              max-width: 30%;
-              height: auto;
-              padding-left: 3%;
-              padding-right: 3%;
-            "
-          />
-          <img
-            src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/thebestemployersforwomen_2023_square_bw-400px.svg?rev=3cc5a2a439654db78e80d4e0ba0366d3&la=en&hash=DE8C46CADAD41A660B2E42A05030CCF9"
-            style="max-width: 30%; height: auto"
-          />
-        </p>
+      <section id="table-section">
+        <table>
+          <tr>
+            <th>Services</th>
+            <th>Industries</th>
+          </tr>
+          <tr>
+            <td>Analytics</td>
+            <td>Aviation</td>
+          </tr>
+          <tr>
+            <td>Cybersecurity</td>
+            <td>Education</td>
+          </tr>
+          <tr>
+            <td>Climate and resilience</td>
+            <td>Energy</td>
+          </tr>
+          <tr>
+            <td>Policy and regulatory</td>
+            <td>Healthcare</td>
+          </tr>
+          <tr>
+            <td>Strategy and innovation</td>
+            <td>Public sector</td>
+          </tr>
+
+          <tr>
+            <td>
+              <span
+                id="table-special-font"
+                style="
+                  font-size: 14px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                "
+                >And more</span
+              >
+
+              <svg width="16px" height="16px" style="vertical-align: middle;
+              fill: #fff"">
+              <polygon
+                points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
+              ></polygon>
+            </td>
+            <td>
+              <span
+                id="table-special-font"
+                style="
+                  font-size: 14px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                "
+                >And more</span
+              >
+              <svg
+                width="16px"
+                height="16px"
+                style="vertical-align: middle; fill: #fff"
+              >
+                <polygon
+                  points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
+                ></polygon>
+              </svg>
+            </td>
+          </tr>
+        </table>
       </section>
+
+      <section id="values-section">
+        <a id="values-section-link" href="icf.com">
+          <p style="padding-left: 5%; padding-right: 5%">
+            Guided by purpose and values, and steadfast in our commitment to
+            corporate citizenship and diversity, we are dedicated to making a
+            positive impact on the world. <br />
+            <span
+              style="
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+              "
+              >Explore our Values</span
+            >
+            <svg width="16px" height="16px" style="vertical-align: middle">
+              <polygon
+                points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
+              ></polygon>
+            </svg>
+          </p>
+          <img
+            src="https://i.imgur.com/radqMmn.png"
+            style="max-width: 50%; height: auto"
+          />
+        </a>
+      </section>
+
+      <section id="stats-table-container">
+        <table id="special-stats-table">
+          <tr>
+            <th class="special-table-headers">50+</th>
+            <th class="special-table-headers">40+</th>
+            <th class="special-table-headers">100+</th>
+            <th class="special-table-headers">100%</th>
+          </tr>
+          <tr>
+            <td class="special-table-cells">Years of Impact</td>
+            <td class="special-table-cells">Years of Climate Science</td>
+            <td class="special-table-cells">Countries supported</td>
+            <td class="special-table-cells">Carbon neutral</td>
+          </tr>
+        </table>
+      </section>
+
+      <section
+        id="awards-images"
+        style="text-align: center; background-color: transparent"
+      >
+        <img
+          src="https://www.icf.com/-/media/images/icf/logos/awards/new/forbes-best-management-consulting-firms_black-and-white-award-badge-site-test-1-01.svg?rev=9efbfb1324cb49258e075d3854923b7d&la=en&hash=CDCC23985D9901E9BB16570B999571DB"
+          style="max-width: 30%; height: auto"
+          class="awards-hover-scale"
+        />
+        <img
+          src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/forbes-best-diversity-badge_black-400px-01.svg?rev=b2459617f6414ee2871184b9beaff65c&la=en&hash=CF0240242FE0E6FF2B3266C6C8182721"
+          style="
+            max-width: 30%;
+            height: auto;
+            padding-left: 3%;
+            padding-right: 3%;
+          "
+          class="awards-hover-scale"
+        />
+        <img
+          src="https://www.icf.com/-/media/images/icf/logos/awards/2023-new-logos/thebestemployersforwomen_2023_square_bw-400px.svg?rev=3cc5a2a439654db78e80d4e0ba0366d3&la=en&hash=DE8C46CADAD41A660B2E42A05030CCF9"
+          style="max-width: 30%; height: auto"
+          class="awards-hover-scale"
+        />
+      </section>
+
       <section style="text-align: center">
         <p style="font-weight: 500; font-size: 20px">
           “ICF has made it possible for my company, a service-disabled,
@@ -169,9 +351,17 @@
           states.” — KC Sanchez, President, Vets Corp Energy Solutions
         </p>
       </section>
-      <button>Press me</button> <button>Or me</button>
+      <button>About ICF</button> <button>Blog</button>
+      <button>Contact</button>
       <div class="footer">
-        <p>&copy; 2024 Business. All rights reserved.</p>
+        <img
+          src="https://i.imgur.com/bHCu9Yf.png"
+          style="max-width: 20%; height: auto"
+        />
+        <p>
+          &copy; Copyright 2024, ICF International Inc. <br />All Rights
+          Reserved
+        </p>
       </div>
     </div>
   </body>
