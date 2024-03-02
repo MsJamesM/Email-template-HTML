@@ -59,7 +59,6 @@
         font-weight: bold;
         transition: transform 0.3s ease;
       }
-
       button:hover {
         transform: translateY(-7px);
       }
@@ -76,28 +75,31 @@
       }
       #services-section {
         display: flex;
+        align-items: center;
         background-color: orange;
-        padding: 0px;
-        margin: 0px;
+        padding: 0;
+        margin: 20px 0;
+        transition: transform 0.2s ease;
       }
-      #services-section-image {
-        align-items: left;
+
+      #services-section:hover {
+        transform: translateY(-7px);
       }
-      #services-section-text {
-        align-items: right;
-        padding-left: 2%;
+
+      #services-section-link {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
       }
-      table {
-        width: 100%;
-        border-collapse: collapse;
+      svg {
+        fill: #fff;
       }
-      th,
-      td {
-        padding: 1%;
-        text-align: left;
+      #services-section svg {
+        transition: transform 0.3s ease;
       }
-      th {
-        background-color: transparent;
+      #services-section:hover svg {
+        transform: translateX(8px);
       }
       .footer {
         padding: 1%;
@@ -120,17 +122,24 @@
         </h1>
       </div>
       <section id="services-section">
-        <img
-          id="services-section-image"
-          src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
-          style="max-width: 50%; height: auto; float: left"
-        />
-        <p id="services-section-text">
-          At the heart of ICF are leaders who truly care about the work we
-          do—and the people making it happen. Many started their careers at ICF
-          and as their professional paths have grown, so has their commitment to
-          our culture, strategy, and teams.
-        </p>
+        <a id="services-section-link" href="icf.com">
+          <img
+            src="https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg"
+            style="max-width: 50%; height: auto"
+          />
+          <p style="padding-left: 2%">
+            At the heart of ICF are leaders who truly care about the work we
+            do—and the people making it happen. Many started their careers at
+            ICF and as their professional paths have grown, so has their
+            commitment to our culture, strategy, and teams.<br />
+            <span style="font-weight: bold">Explore</span>
+            <svg width="16px" height="16px" style="vertical-align: middle">
+              <polygon
+                points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
+              ></polygon>
+            </svg>
+          </p>
+        </a>
       </section>
       <section style="text-align: center; background-color: transparent">
         <p>
