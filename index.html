@@ -26,25 +26,26 @@
         max-width: 40%;
         margin: auto;
         padding: 2%;
-        background-image: url("https://images.unsplash.com/photo-1519424032898-dde33a58fe04?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-image: url("images/hero-image.png");
         background-size: 110%;
         background-repeat: no-repeat;
         background-color: #000;
         text-align: center;
       }
-      #placeholder-logo {
+      #header-logo {
         z-index: 2;
         text-align: center;
+        opacity: 0.9;
       }
       .header {
         background-color: transparent;
-        color: #d6d5d5;
+        color: #8c8c8c;
       }
       h1 {
-        font-size: 44px;
+        font-size: 35px;
         font-weight: 400;
       }
-      button {
+      .button {
         display: inline-block;
         margin: 1%;
         margin-bottom: 3%;
@@ -54,15 +55,16 @@
         color: #d6d5d5;
         text-align: center;
         text-transform: uppercase;
+        text-decoration: none;
         font-size: 16px;
         font-family: "Figtree";
         font-weight: bold;
         transition: transform 0.3s ease;
       }
-      button:hover {
+      .button:hover {
         transform: translateY(-7px);
       }
-      button:active {
+      .button:active {
         transform: translateY(0);
       }
       section {
@@ -92,7 +94,7 @@
         transition: transform 0.3s ease;
       }
       #about-section {
-        background-color: #a5b5b2ff;
+        background-color: #759ac6;
         padding: 0;
         margin: 20px 0;
       }
@@ -100,14 +102,12 @@
       #values-section-link {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         color: #ffffff;
         text-decoration: none;
       }
       #values-section {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 0;
         background-color: #607339;
       }
@@ -124,6 +124,13 @@
       }
       td:hover {
         text-decoration: underline;
+      }
+      #table-special-font {
+        color: #fff;
+      }
+      #table-section-links {
+        color: #fff;
+        text-decoration: none;
       }
       #stats-table-container:hover {
         transform: none;
@@ -161,26 +168,35 @@
         background-color: transparent;
         color: #fff;
       }
+      #social-media-links {
+      text-decoration: none;
+      }
+      #social-media-buttons {
+        transition: transform 0.2s ease;
+      }
+      #social-media-buttons:hover {
+        transform: translateY(-7px);
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <img
-        src="https://i.imgur.com/Zglqr0y.png"
-        id="placeholder-logo"
-        style="max-width: 40%; height: auto; margin-top: 40%"
+        src="images/logo-white.png"
+        id="header-logo"
+        style="max-width: 30%; height: auto; margin-top: 22%"
       />
       <div class="header">
         <h1>
           Building a more prosperous and resilient world
-          <span style="color: #fff">for all</span>
+          <span style="color: #b7b7b7">for all</span>
         </h1>
       </div>
       <section id="about-section">
         <a id="about-section-link" href="icf.com">
           <img
-            src="https://i.imgur.com/THYaJhG.png"
-            style="max-width: 50%; height: auto"
+            src="https://i.imgur.com/UaXXQek.jpg"
+            style="max-width: 50%; height: auto; opacity: 0.8"
           />
           <p style="padding-left: 5%; padding-right: 5%">
             ICF is a global advisory and technology services provider, combining
@@ -203,6 +219,7 @@
           </p>
         </a>
       </section>
+
       <section id="table-section">
         <table>
           <tr>
@@ -210,47 +227,87 @@
             <th>Industries</th>
           </tr>
           <tr>
-            <td>Analytics</td>
-            <td>Aviation</td>
-          </tr>
-          <tr>
-            <td>Cybersecurity</td>
-            <td>Education</td>
-          </tr>
-          <tr>
-            <td>Climate and resilience</td>
-            <td>Energy</td>
-          </tr>
-          <tr>
-            <td>Policy and regulatory</td>
-            <td>Healthcare</td>
-          </tr>
-          <tr>
-            <td>Strategy and innovation</td>
-            <td>Public sector</td>
-          </tr>
-
-          <tr>
             <td>
-              <span
-                id="table-special-font"
-                style="
-                  font-size: 14px;
-                  font-weight: bold;
-                  text-transform: uppercase;
-                  text-decoration: none;
-                "
-                >And more</span
+              <a
+                href="https://www.icf.com/work/data-analytics"
+                id="table-section-links"
+                >Analytics</a
               >
-
-              <svg width="16px" height="16px" style="vertical-align: middle;
-              fill: #fff"">
-              <polygon
-                points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
-              ></polygon>
             </td>
             <td>
-              <span
+              <a
+                href="https://www.icf.com/work/transportation/aviation"
+                id="table-section-links"
+                >Aviation</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.icf.com/work/cybersecurity"
+                id="table-section-links"
+                >Cybersecurity</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://www.icf.com/work/education"
+                id="table-section-links"
+                >Education</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.icf.com/work/climate"
+                id="table-section-links"
+                >Climate and resilience</a
+              >
+            </td>
+            <td>
+              <a href="https://www.icf.com/work/energy" id="table-section-links"
+                >Energy</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.icf.com/work/regulatory-policy"
+                id="table-section-links"
+                >Policy and regulatory</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://www.icf.com/work/healthcare"
+                id="table-section-links"
+                >Healthcare</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.icf.com/work/advisory"
+                id="table-section-links"
+                >Strategy and innovation</a
+              >
+            </td>
+            <td>
+              <a
+                href="https://www.icf.com/work/transportation"
+                id="table-section-links"
+                >Transportation</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a
+                href="https://www.icf.com/work"
                 id="table-special-font"
                 style="
                   font-size: 14px;
@@ -258,8 +315,7 @@
                   text-transform: uppercase;
                   text-decoration: none;
                 "
-                >And more</span
-              >
+                >And more
               <svg
                 width="16px"
                 height="16px"
@@ -270,13 +326,34 @@
                 ></polygon>
               </svg>
             </td>
+            <td>
+              <a
+                href="https://www.icf.com/work"
+                id="table-special-font"
+                style="
+                  font-size: 14px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                "
+                >And more
+              <svg
+                width="16px"
+                height="16px"
+                style="vertical-align: middle; fill: #fff"
+              >
+                <polygon
+                  points="8.00135019 0 6.4316615 1.56980559 11.7518634 6.89012442 -1.26121336e-13 6.89012442 -1.26121336e-13 9.10999247 11.7518634 9.10999247 6.4316615 14.4303113 8.00135019 16 16.0014086 8.00005845"
+                ></polygon>
+              </svg></a
+            </td>
           </tr>
         </table>
       </section>
 
       <section id="values-section">
         <a id="values-section-link" href="icf.com">
-          <p style="padding-left: 5%; padding-right: 5%">
+          <p style="padding-left: 5%; padding-right: 5%; padding-top: 5%;">
             Guided by purpose and values, and steadfast in our commitment to
             corporate citizenship and diversity, we are dedicated to making a
             positive impact on the world. <br />
@@ -296,7 +373,7 @@
           </p>
           <img
             src="https://i.imgur.com/radqMmn.png"
-            style="max-width: 50%; height: auto"
+            style="max-width: 50%; height: auto; opacity: 0.8"
           />
         </a>
       </section>
@@ -351,14 +428,21 @@
           states.” — KC Sanchez, President, Vets Corp Energy Solutions
         </p>
       </section>
-      <button>About ICF</button> <button>Blog</button>
-      <button>Contact</button>
+      
       <div class="footer">
+      <a href="https://www.icf.com/company/about" class="button">About ICF</a>
+      <a href="https://www.icf.com/contact-us" class="button">Contact Us</a>
+      <br>
         <img
-          src="https://i.imgur.com/bHCu9Yf.png"
-          style="max-width: 20%; height: auto"
-        />
-        <p>
+          src="images/logo-white.png"
+          style="max-width: 20%; height: auto; padding: 3%;"
+        /><br>
+<a id="social-media-links" href="https://www.facebook.com/ThisIsICF"><img id="social-media-buttons" src="images/facebook.png" alt="Facebook" style="max-width: 5%; height: auto; padding: 1%;"> </a>
+<a id="social-media-links" href="https://www.instagram.com/thisisicf"><img id="social-media-buttons" src="images/instagram.png" alt="Instagram" style="max-width: 5%; height: auto; padding: 1%;"> </a>
+<a id="social-media-links" href="https://www.linkedin.com/company/icf-international"><img id="social-media-buttons" src="images/linkedin.png" alt="LinkedIn" style="max-width: 5%; height: auto; padding: 1%;"> </a>
+<a id="social-media-links" href="https://twitter.com/ICF">
+<img id="social-media-buttons" src="images/twitter.png" alt="Twitter" style="max-width: 5%; height: auto; padding: 1%;"></a>
+        <p style="font-size: 13px;">
           &copy; Copyright 2024, ICF International Inc. <br />All Rights
           Reserved
         </p>
