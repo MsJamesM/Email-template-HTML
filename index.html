@@ -18,8 +18,8 @@
         padding: 0;
         font-family: "Figtree", Helvetica, Sans-serif;
         font-weight: 300;
-        line-height: 1.5;
         font-size: 18px;
+        line-height: 1.5;
         letter-spacing: 0.2px;
       }
       .container {
@@ -32,10 +32,17 @@
         background-color: #000;
         text-align: center;
       }
+      #header-logo-link {
+        text-decoration: none;
+      }
       #header-logo {
         z-index: 2;
         text-align: center;
         opacity: 0.9;
+        transition: transform 0.2s ease;
+      }
+      #header-logo:hover {
+        transform: translateY(-7px);
       }
       .header {
         background-color: transparent;
@@ -51,8 +58,8 @@
         margin-bottom: 3%;
         padding: 24px;
         background-color: transparent;
-        border: solid #d6d5d5 4px;
-        color: #d6d5d5;
+        border: solid #ffffff 4px;
+        color: #ffffff;
         text-align: center;
         text-transform: uppercase;
         text-decoration: none;
@@ -177,15 +184,74 @@
       #social-media-buttons:hover {
         transform: translateY(-7px);
       }
+      /* Media queries (WIP) */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 5%;
+    background-size: 120%;
+  }
+  #header-logo {
+    max-width: 50%;
+    margin-top: 10%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .button {
+    padding: 16px;
+    font-size: 14px;
+  }
+  #about-section-link,
+  #values-section-link {
+    flex-direction: column;
+  }
+  #about-section-link img,
+  #values-section-link img {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+  #stats-table-container {
+    overflow-x: auto;
+  }
+  .special-table-headers {
+    font-size: 30px;
+  }
+  .special-table-cells {
+    font-size: 12px;
+  }
+  #awards-images img {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+  #social-media-links a {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  #social-media-buttons {
+    max-width: 30px;
+  }
+  .footer {
+    padding: 5%;
+  }
+  #social-media-links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  p {
+    font-size: 100%;
+  }
+}
     </style>
   </head>
   <body>
     <div class="container">
-      <img
+      <a id="header-logo-link" href="https://www.icf.com"><img
         src="images/logo-white.png"
         id="header-logo"
         style="max-width: 30%; height: auto; margin-top: 22%"
-      />
+      /></a>
       <div class="header">
         <h1>
           Building a more prosperous and resilient world
