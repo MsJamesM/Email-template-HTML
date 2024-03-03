@@ -2,23 +2,17 @@
 
 ## Description
 
-An email template exercise
-
-## Installation
-
-N/A
-
-## Usage
-
-N/A
+An exercise in the use of HTML and CSS for creating a minimal but visually appealing and responsive email template design, using the global consulting company, [ICF](https://www.ICF.com), as an example. The template includes sections for header, content, and footer, with basic optimization for various email clients and devices.
 
 ## Screenshot
 
-N/A
+![Application Screenshot](images/readme-screenshot.png)
 
 ## Credits
 
-N/A
+[ICF](https://www.ICF.com)
+
+[Unsplash](https://unsplash.com/)
 
 ## License
 
